@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flor</title>
+</head>
+
+<body>
+    <div class="greetings">
+        <span class="wave">F</span>
+        <span class="blink">E</span>
+        <span class="wave">L</span>
+        <span class="blink">I</span>
+        <span class="wave">Z</span>
+        <span class="separator">~</span>
+        <span class="wave">D</span>
+        <span class="blink">I</span>
+        <span class="wave">A</span>
+        <span class="separator">~</span>
+        <span class="wave">A</span>
+        <span class="blink">M</span>
+        <span class="wave">O</span>
+        <span class="blink">R</span>
+        <span class="wave">E</span>
+    </div>
+    
+    <div class="description">
+        <span>Para anitta la mujer mas hermosa del mundo 💕</span>
+    </div>
+    
+    <div class="button">
+        <button class="botones">
+            <a href="flower.html" style="color: #0c0c0c; text-decoration: none;">Presiona Aquí Anitta 💖</a>
+        </button>
+    </div>
+    
+    <div class="VideoAnitta">
+        <video width="150" height="350" controls>
+            <source src="video/Anitta.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('video');
+            video.addEventListener('error', function() {
+                alert('No se pudo cargar el video. Verifica la ruta o el formato del archivo.');
+            });
+        });
+    </script>
+</body>
+</html>
